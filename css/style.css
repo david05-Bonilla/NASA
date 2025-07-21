@@ -45,7 +45,7 @@ nav .wrapper{
     width: 55px;
     height: 45px;
     position:absolute;
-    left: 740px;
+    left: 680px;
 }
 .wrapper .nav-links{
   display: inline-flex;
@@ -108,6 +108,13 @@ nav .wrapper{
   
 }
 
+.insar{
+  position: absolute;
+  top: 1185px;
+  right: 0px;
+  width: 1342px ;
+  height: 650px ;
+}
 .row .mega-links li a{
   color: #f2f2f2;
 }
@@ -120,6 +127,12 @@ nav .wrapper{
 .News{
   position: absolute;
   top: 500px;
+  left: 50px;
+
+}
+.Humans{
+  position: absolute;
+  top: 1900px;
   left: 50px;
 
 }
@@ -142,6 +155,45 @@ nav .wrapper{
   left: 675px;
   height: 400px;
   width: 290px;
+}
+.e10{
+  position: absolute;
+  top: 2025px;
+  left: 50px;
+  height: 400px;
+  width: 290px;
+}
+.athena{
+  position: absolute;
+  top: 1050px;
+  left: 50px;
+  height: 90px;
+  width: 90px;
+  border-radius: 100%;
+}
+.Hubble{
+  position: absolute;
+  top: 1050px;
+  left: 350px;
+  height: 90px;
+  width: 90px;
+  border-radius: 100%;
+}
+.large{
+  position: absolute;
+  top: 1050px;
+  left: 675px;
+  height: 90px;
+  width: 90px;
+  border-radius: 100%;
+}
+.jupiter{
+  position: absolute;
+  top: 1050px;
+  left: 975px;
+  height: 90px;
+  width: 90px;
+  border-radius: 100%;
 }
 .search{
     position: absolute;
