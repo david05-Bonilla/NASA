@@ -1,132 +1,357 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NASA 2.0</title>
-    <link rel="icon" href="assets/Nasa.png">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NASA</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
-    <nav>
-  <div class="wrapper">
-    <div class="Explore"><a href="#">  Explore <i class="fa-solid fa-circle-chevron-down"></i></a></div>
-    <input type="text" class="search" placeholder="  Search"> <img class="logo" src="assets/Nasa.png" alt="">
+  <div class="menu">
+    <p class="Explore" >
+      Explore
+    </p>
+     <i class="fa-solid fa-circle-chevron-down"></i>
 
-    <ul class="nav-links">
-      <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+    <input class="search" type="text" placeholder="Search">
+
+    <img class="logo" src="assets/Nasa.png">
+
+    <ul class="submenu">
+    
+     <li class="sub ">News & Events <i class="fa-solid fa-angle-down"></i></li>
+
+ 
+      <li class="sub">Multimedia <i class="fa-solid fa-angle-down"></i></li>
+
+      <li class="sub ">NASA+</li> 
       
-      <li>
-        <a href="#" class="desktop-item">News & Events</a>
-        
-        <label for="showDrop" class="mobile-item">Dropdown Menu</label>
-        <ul class="drop-menu">
-          <li><a href="#">News Releases</a></li>
-          <li><a href="#">Drop menu 2</a></li>
-          <li><a href="#">Drop menu 3</a></li>
-          <li><a href="#">Drop menu 4</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="#" class="desktop-item">Multimedia</a>
-        
-        <label for="showMega" class="mobile-item">Mega Menu</label>
-        <div class="mega-box">
-          <div class="content">
-            <div class="row">
-              <img src="https://fadzrinmadu.github.io/hosted-assets/responsive-mega-menu-and-dropdown-menu-using-only-html-and-css/img.jpg" alt="">
-            </div>
-            <div class="row">
-              <header>Design Services</header>
-              <ul class="mega-links">
-                <li><a href="#">Graphics</a></li>
-                <li><a href="#">Vectors</a></li>
-                <li><a href="#">Business cards</a></li>
-                <li><a href="#">Custom logo</a></li>
-              </ul>
-            </div>
-            <div class="row">
-              <header>Email Services</header>
-              <ul class="mega-links">
-                <li><a href="#">Personal Email</a></li>
-                <li><a href="#">Business Email</a></li>
-                <li><a href="#">Mobile Email</a></li>
-                <li><a href="#">Web Marketing</a></li>
-              </ul>
-            </div>
-            <div class="row">
-              <header>Security services</header>
-              <ul class="mega-links">
-                <li><a href="#">Site Seal</a></li>
-                <li><a href="#">VPS Hosting</a></li>
-                <li><a href="#">Privacy Seal</a></li>
-                <li><a href="#">Website design</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </li>
-      <li><a href="#"><b>NASA+</b></a></li>
     </ul>
-    <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+    <p class="live">L I V E</p>
+  </div>
+</nav>
+
+    <div class="astronauta">
+      <h1 class="meet">Meet the Crew</h1>
+      <p class="Episode">On the latest episode of "Houston We Have a Podcast," NASA’s SpaceX Crew-<br>11 quartet each dive into their paths to space and what lies ahead aboard the<br> International Space Station.</p>
+      <button type="button" class="button"> <b>Listen</b></button>
+    </div>
+    <div class="fila">
+    <span class="News"><b>Featured News<b></b></span> 
+    <span class="publi">Recently Published</span>
+</div>
+
+<table  class="Tabla">
+  <tr>
+    <td rowspan="2" id="Jupiter"><div class="Jupiter"> <h2><br><br><br><br><br><br><br><br><br><br><br><br><br><br> NASA Shares How to Save Camera 370-Million-Miles<br> Away Near Jupiter</h2></div></td>
+    
+    
+    <td rowspan="2" id="Makenzie"><div class="Makenzie"> <h2><br><br><br><br><br><br><br><br><br><br><br><br><br>NASA Goddard Center<br> Director Makenzie<br> Lystrup Set to Depart</h2></div></td>
+
+    <td id="Bone"><div class="Bone"> <h2><br><br><br>Bone and Robotics Research Informing Future Missions as Crew Nears Departure</h2></div></td>
+  </tr>
+  <tr>
+    
+    <td id="Array"><div class="Array"> <h2><br><br><br>NASA Conducts Solar Array Testing on Interstellar Mapping Spacecraft</h2></div></td>
+  </tr>
+</table>
+</div>
+    <div class="contenedor-articulos">
+
+  <div class="articulo">
+    <img src="/assets/athena-sensorcraft-v2-2.png">
+    <div class="texto-articulo">
+      <span class="minutos">4 MIN READ</span>
+      <span class="titulo">NASA Tests Scalable Satellite Tech to Launch Sensors Quicker</span>
+      <span class="etiqueta">ARTICLE</span>
+    </div>
   </div>
 
-</nav>
-    <div>
-    <img class="Astronauta" src="assets/54658919027-2ce4c99e48-o.png" alt="">
+  <div class="articulo">
+    <img src="/assets/Hubble_NGC1786_potw2528a.png">
+    <div class="texto-articulo">
+      <span class="minutos">2 MIN READ</span>
+      <span class="titulo">Hubble Snaps Galaxy Cluster’s Portrait</span>
+      <span class="etiqueta">ARTICLE</span>
+    </div>
+  </div>
+
+  <div class="articulo">
+    <img src="/assets/jsc2025e041083_large.png">
+    <div class="texto-articulo">
+      <span class="minutos">6 MIN READ</span>
+      <span class="titulo">What You Need to Know About NASA’s SpaceX Crew-11 Mission</span>
+      <span class="etiqueta">ARTICLE</span>
+    </div>
+  </div>
+
+  <div class="articulo">
+    <img src="/assets/Jupiter-rising-2_credit_Bill-Dunford_CC-BY-NC-2.0.png">
+    <div class="texto-articulo">
+      <span class="minutos">5 MIN READ</span>
+      <span class="titulo">What’s Up: July 2025 Skywatching Tips from NASA</span>
+      <span class="etiqueta">ARTICLE</span>
+    </div>
+  </div>
+    <div class="Views">
+      <h1 class="views">Unprecedented<br>Views of Earth</h1>
+      <p class="Indian">NASA and the Indian Space Research Organisation have set the launch readiness date<br> for the NISAR mission for no earlier than Wednesday, July 30.  The Earth-observing<br> satellite, which will be the first to carry L- and S-band radars, is set to lift off aboard<br> an ISRO Geosynchronous Launch Vehicle from ISRO’s.</p>
+    
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <div><h1 class="Humans"><b>Humans in Space</b></h1></div><br><br>
+      <div class="grid">
+  <div class="card" style="background-image: url('/assets/51476067951-e10dfb6875-o.png');">
+    <div class="card-content">
+      <div class="card-title">Humans In Space</div>
+      <button class="card-button">→</button>
+    </div>
+  </div>
+
+  <div class="card" style="background-image: url('/assets/53906743054-80f4972233-o.png');">
+    <div class="card-content">
+      <div class="card-title">Living in Space</div>
+      <button class="card-button">→</button>
+    </div>
+  </div>
+
+  <div class="card" style="background-image: url('/assets/Mision.jpeg');">
+    <div class="card-content">
+      <div class="card-title">Why Go to Space</div>
+      <button class="card-button">→</button>
+    </div>
+  </div>
+
+  <div class="card" style="background-image: url('/assets/luna.jpeg');">
+    <div class="card-content">
+      <div class="card-title">Destinations</div>
+      <button class="card-button">→</button>
+    </div>
+  </div>
+</div>
+    <div class="image-of-day-container">
+        <div class="text-section">
+            <p class="today">Today</p>
+            <h1>Image Of The Day</h1>
+            <h2>The Day Earth Smiled</h2>
+            <p class="description">
+                On July 19, 2013, in an event celebrated the world over, NASA’s Cassini spacecraft slipped into Saturn’s shadow and turned to image the planet, seven of its moons, its inner rings, and, in the background, our home planet, Earth.
+            </p>
+
+            <a href="#" class="browse-link">Browse Image Archive <span>➔</span></a>
+        </div>
+
+        <div class="image-section">
+            <img src="/assets/saturno.jpeg" alt="Saturn Image">
+
+            <a href="#" class="view-link">View image <span>➔</span></a>
+        </div>
+    </div>
+    <h1 class="more">More NASA Images</h1>
+
+    <div class="gallery-container">
+
+        <div class="gallery">
+            <div class="images">
+                <img src="/assets/pato.jpeg" alt="Bird Image 1">
+                <img src="/assets/pelicanos.jpeg" alt="Bird Image 2">
+                <img src="/assets/aguila.jpeg" alt="Bird Image 3">
+            </div>
+            <h2>Wildlife Birds Gallery</h2>
+            <p>18 Images</p>
+        </div>
+
+        <div class="gallery">
+            <div class="images">
+                <img src="/assets/ciervo.jpeg" alt="Mammal Image 1">
+                <img src="/assets/jabali.jpeg" alt="Mammal Image 2">
+                <img src="/assets/armadillo.jpeg" alt="Mammal Image 3">
+            </div>
+            <h2>Wildlife Mammals Gallery</h2>
+            <p>19 Images</p>
+        </div>
+
+        <div class="gallery">
+            <div class="images">
+                <img src="/assets/mariposa.jpeg" alt="Insect Image 1">
+                <img src="/assets/mariposa2.jpeg" alt="Insect Image 2">
+                <img src="/assets/araña.jpeg" alt="Insect Image 3">
+            </div>
+            <h2>Wildlife Insects Gallery</h2>
+            <p>16 Images</p>
+        </div>
+        <div class="Universe">
+      <h1 class="inboxx">Explore the<br> Universe from<br> your Inbox</h1>
+      <p class="stayy">Stay up-to-date on the latest news from NASA–from Earth to the <br> Moon, the Solar System and beyond. <br></p>
     </div>
 
-<div class="body-text">
-  <div class="title">
-    <h1 class="Houston">Houston We Have </h1>
-    <h1 class="Podcast">a Podcast</h1>
-    <p>On the ltest episode of "Houston We have a Podcast," NASA´s Spacex Crew-11<br> quarter each dive into their paths to space ad what lies ahead aboard the<br>internacional Space Station.</p>
+</div>
+  
+<div class="earth-info-container">
+        <div class="text-section">
+            <p class="small-title">Earth Information Center</p>
+            <h1 class="our">Explore our changing planet</h1>
+            <p class="description">
+                For more than 50 years, NASA satellites have provided data on Earth’s land, water, air, temperature, and climate. NASA’s Earth Information Center allows visitors to see how our planet is changing in six key areas: sea level rise and coastal impacts, health and air quality, wildfires, greenhouse gases, sustainable energy, and agriculture.
+            </p>
+
+            <a href="#" class="earth-link">Earth Science <span>➔</span></a>
+        </div>
+
+        <div class="image-section">
+            <img src="/assets/mar.jpeg" alt="Earth Image">
+            <p class="caption">
+                A type of phytoplankton called coccolithophores, less common in waters off New England since around 2010, made an impressive appearance in summer 2025.
+            </p>
+        </div>
+    </div>
+
+     <div><h1 class="Humans">More Topics from NASA</h1></div><br><br>
+      <div class="grid">
+  <div class="card" style="background-image: url('/assets/1.jpeg');">
+    <div class="card-content">
+      <div class="card-title">Missins</div>
+      <button class="card-button">→</button>
+    </div>
   </div>
-  <div>
-    <h4 class="News">Featured News</h4>
+
+  <div class="card" style="background-image: url('/assets/51476067951-e10dfb6875-o.png');">
+    <div class="card-content">
+      <div class="card-title">Humans in<br> space</div>
+      <button class="card-button">→</button>
+    </div>
   </div>
-  <div>
-    <img class="Estrellas" src="assets/Hubble_NGC1786_potw2528a.png" alt="">
+
+  <div class="card" style="background-image: url('/assets/Tierra.jpeg');">
+    <div class="card-content">
+      <div class="card-title">Earth</div>
+      <button class="card-button">→</button>
+    </div>
   </div>
-  <div>
-    <img class="Baby" src="assets/baby.png" alt="">
+
+  <div class="card" style="background-image: url('/assets/4.jpeg');">
+    <div class="card-content">
+      <div class="card-title">Our solar<br> sistem</div>
+      <button class="card-button">→</button>
+    </div>
   </div>
-  <div>
-    <h6 class="Published">Recently Published</h6>
+
+  
+</div>
+<br>
+    <div>
+      <div class="grid">
+  <div class="card" style="background-image: url('/assets/5.jpeg');">
+    <div class="card-content">
+      <div class="card-title">Universe</div>
+      <button class="card-button">→</button>
+    </div>
   </div>
-  <div>
-    <img class="space" src="assets/spaceapps.png" alt="">
+
+  <div class="card" style="background-image: url('/assets/6.jpeg');">
+    <div class="card-content">
+      <div class="card-title">science<br>Missins</div>
+      <button class="card-button">→</button>
+    </div>
   </div>
-  <div>
-    <img class="ekoi" src="assets/ekoi-outlast-jersey-w.png" alt="">
+
+  <div class="card" style="background-image: url('/assets/7.jpeg');">
+    <div class="card-content">
+      <div class="card-title">Aereonautics</div>
+      <button class="card-button">→</button>
+    </div>
   </div>
-  <div>
-    <img class="athena" src="assets/athena-sensorcraft-v2-2.png" alt="">
+
+  <div class="card" style="background-image: url('/assets/8.jpeg');">
+    <div class="card-content">
+      <div class="card-title">Tecnology</div>
+      <button class="card-button">→</button>
+    </div>
   </div>
-  <div>
-    <img class="Hubble" src="assets/Hubble_NGC1786_potw2528a.png" alt="">
-  </div>
-  <div>
-    <img class="large" src="assets/jsc2025e041083_large.png" alt="">
-  </div>
-  <div>
-    <img class="jupiter" src="assets/Jupiter-rising-2_credit_Bill-Dunford_CC-BY-NC-2.0.png" alt="">
-  </div>
-  <br>
-  <div>
-    <img class="insar" src="assets/1-insar-16.png" alt="">
-  </div>
-  <br>
-  <div>
-    <h4 class="Humans">Humans in Space</h4>
-  </div>
-  <br>
-  <div>
-    <img class="e10" src="assets/51476067951-e10dfb6875-o.png" alt="">
-  </div>
-  <div>
-    <img src="" alt="">
-  </div>
+
+  
+</div><br><br><br><br>
+     <footer class="nasa-footer">
+    <div class="footer-container">
+      <div class="footer-column logo-section">
+        <img src="assets/Nasa.png" alt="NASA Logo" class="nasa-logo">
+        <h3>National Aeronautics and Space Administration</h3>
+        <p>NASA explores the unknown in air and space, innovates for the benefit of humanity, and inspires the world through discovery.</p>
+        <p><a href="#">About NASA's Mission</a></p>
+        <p><strong>Join Us</strong> <span class="arrow">→</span></p>
+      </div>
+
+      <div class="footer-column">
+        <h4>Home</h4>
+        <p>News & Events</p>
+        <p>Multimedia</p>
+        <p>NASA+ <span class="live-badge">LIVE</span></p>
+        <p>Missions</p>
+      </div>
+
+      <div class="footer-column">
+        <h4>Humans in Space</h4>
+        <p>Earth</p>
+        <p>The Solar System</p>
+        <p>The Universe</p>
+        <p>Science</p>
+      </div>
+
+      <div class="footer-column">
+        <h4>Aeronautics</h4>
+        <p>Technology</p>
+        <p>Learning Resources</p>
+        <p>About NASA</p>
+        <p>NASA en Español</p>
+      </div>
+
+      <div class="footer-column">
+        <h4>Follow NASA</h4>
+        <div class="social-icons">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+</svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+</svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+  <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+</svg>
+         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+  <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+</svg>
+        </div>
+        <p>More NASA Social Accounts</p>
+        <p>NASA Newsletters</p>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="footer-bottom">
+      <div class="footer-links">
+        <a href="#">Sitemap</a>
+        <a href="#">For Media</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">FOIA</a>
+        <a href="#">No FEAR Act</a>
+        <a href="#">Office of the IG</a>
+        <a href="#">Budget & Annual Reports</a>
+        <a href="#">Agency Financial Reports</a>
+        <a href="#">Contact NASA</a>
+        <a href="#">Accessibility</a>
+      </div>
+
+      <div class="footer-info">
+        <p id="foot">Page Last Updated: <strong>May 20, 2025</strong></p><br>
+        <p id="foot">Page Editor: <strong>Andrea Gianopoulos</strong></p>
+        <p id="foot">Responsible NASA Official for Science: <strong>Dana Bolles</strong></p>
+      </div>
+    </div>
+   
+  </footer>
 </body>
 </html>

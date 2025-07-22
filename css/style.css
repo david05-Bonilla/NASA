@@ -1,200 +1,158 @@
- @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+ 
 
- *{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+*{
+ margin: 0;
+ padding: 0;
 }
-nav{
-  position: static;
-  z-index: 99;
+
+body{
+  font-family:Arial, Helvetica, sans-serif;
+  background-color: white;
   width: 100%;
-  
-  background: #000000;
 }
-nav .wrapper{
-  position: relative;
-  max-width: 1550px;
-  padding: 0px 10px;
-  height: 89px;
-  line-height: 70px;
-  margin: auto;
-  display: flex;
+
+.menu{
   align-items: center;
-  justify-content: space-between;
-}
-.fa-solid{
-    color: #000000;
-    background-color: rgb(255, 255, 255);
-    border-radius: 50%;
-    border:solid rgb(255, 255, 255) 0.5px ;
-    font-size: small;
-    margin-left: 10px;
-    
-}
-.wrapper .Explore a{
-  color: #f2f2f2;
-  font-size: 20px;
-  font-weight: 630;
-  text-decoration: none;
-  
+  padding: 24px 0px 20px 0px ;
+  background-color: black;
+  color: white;
+  display:flex;
 }
 
-.logo{
-    width: 55px;
-    height: 45px;
-    position:absolute;
-    left: 680px;
-}
-.wrapper .nav-links{
-  display: inline-flex;
-}
-.nav-links li{
-  list-style: none;
-}
-.nav-links li a{
-  color: #f2f2f2;
-  text-decoration: none;
+.Explore{
+  font-weight: bold;
+  padding-left: 32px;
   font-size: 18px;
-  font-weight: 500;
-  padding: 9px 15px;
-  border-radius: 5px;
-  transition: all 0.3s ease;
-}
-.nav-links li a{
-  background: #000000;
-}
-.nav-links .mobile-item{
-  display: none;
-}
-.nav-links .drop-menu{
-  position: absolute;
-  background: #242526;
-  width: 180px;
-  line-height: 45px;
-  top: 85px;
-  opacity: 0;
-  visibility: hidden;
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-}
-.nav-links li:focus .drop-menu,
-.nav-links li:focus .mega-box{
-  transition: all 0.3s ease;
-  top: 70px;
-  opacity: 1;
-  visibility: visible;
-}
-.drop-menu li a{
-  width: 100%;
-  display: block;
-  padding: 0 0 0 15px;
-  font-weight: 400;
-  border-radius: 0px;
-}
-.mega-box{
-  position: absolute;
-  left: 0;
-  width: 100%;
-  padding: 0 30px;
-  top: 85px;
-  opacity: 0;
-  visibility: hidden;
-}
-.Astronauta{
-  position: absolute;
-  width: 1342px ;
-  height: 650px ;
-  
 }
 
-.insar{
-  position: absolute;
-  top: 1185px;
-  right: 0px;
-  width: 1342px ;
-  height: 650px ;
+.fa-circle-chevron-down{
+  margin-left: 1%;
+  font-size: 13px;
+  color: black;
+  border-radius: 50%;
+  background-color: white;
+  border: 0.5px white solid;
+  border-radius: 50%;
 }
-.row .mega-links li a{
-  color: #f2f2f2;
+
+.search{
+  margin-left: 2%;
+  padding: 0.45% 0% 0.4% 0%;
+  background: black;
+  font-size: 15px;
+  border: 1px gray solid;
+  color: white;
+  padding-left: 0.3%;
 }
-.wrapper .btn{
+
+.search:focus{
+  border: 3px solid skyblue;
+}
+.logo{
+  margin-left: 40%;
+  width: 53px;
+}
+
+.submenu{
+  gap: 7px;
+  font-size: 18px;
+  font-weight: bold;
+  padding-left: 18%;
+  display: flex;
+  list-style-type: none;
+}
+
+.fa-angle-down{
+  font-size: small; 
+}
+
+.live{
+  font-size:x-small;
+  border: 1px solid red;
+  margin-left: 0.5%;
+  padding: 0.1% 0.2% 0.1% 0.2%;
+  border-radius: 10%;
+}
+
+.live:hover{
+  background-color: red;
+}
+
+
+.astronauta{
+  background-image:linear-gradient(to right, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0 ) 120%), url("/assets/54658919027-2ce4c99e48-o.png");
+  width: 100%;
+  height: 120dvb;
+  background-size: 115%;
+  background-position: center;
+  background-repeat: no-repeat;
   color: #fff;
-  font-size: 20px;
-  cursor: pointer;
-  display: none;
+}
+.Views{
+  background-image:linear-gradient(to right, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0 ) 100%), url("/assets/1-insar-16.png");
+  width: 100%;
+  height: 120dvb;
+  background-size: 115%;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+.views{
+  padding-top: 10%;
+  padding-left: 2%;
+  font-size: 500%;
+}
+.Indian{
+  padding-top: 4%;
+  padding-left: 2%;
+  font-size: 115%;
+  line-height: 1.5;
+}
+.meet{
+  padding-top: 30%;
+  padding-left: 10%;
+  font-size: 500%;
+}
+.Episode{
+  padding-top: 4%;
+  padding-left: 10%;
+  font-size: 115%;
+  line-height: 1.5;
+}
+.button{
+  margin-left: 10%;
+  margin-top: 2%;
+  width: 15%;
+  height: 5%;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(255, 65, 51);
+  color: #fff;
+  font-size: 150%;
+
+}
+.fila{
+  display: flex;
+  justify-content: space-between;
+  padding: 5%;
 }
 .News{
-  position: absolute;
-  top: 500px;
-  left: 50px;
+  padding-top: 0%;
+  padding-left: 10%;
+  font-size:xxx-large;
+}
+.publi{
+  position: relative;
+  font-size: x-large;
+  top: 25%;
+  right: 50%;
+}
 
+.button:hover{
+  background-color: rgb(182, 16, 16);
 }
-.Humans{
-  position: absolute;
-  top: 1900px;
-  left: 50px;
 
-}
-.Published{
-  position: absolute;
-  top: 525px;
-  left: 1000px;
 
-}
-.Estrellas{
-  position: absolute;
-  top: 625px;
-  left: 50px;
-  height: 400px;
-  width: 610px;
-}
-.Baby{
-  position: absolute;
-  top: 625px;
-  left: 675px;
-  height: 400px;
-  width: 290px;
-}
-.e10{
-  position: absolute;
-  top: 2025px;
-  left: 50px;
-  height: 400px;
-  width: 290px;
-}
-.athena{
-  position: absolute;
-  top: 1050px;
-  left: 50px;
-  height: 90px;
-  width: 90px;
-  border-radius: 100%;
-}
-.Hubble{
-  position: absolute;
-  top: 1050px;
-  left: 350px;
-  height: 90px;
-  width: 90px;
-  border-radius: 100%;
-}
-.large{
-  position: absolute;
-  top: 1050px;
-  left: 675px;
-  height: 90px;
-  width: 90px;
-  border-radius: 100%;
-}
-.jupiter{
-  position: absolute;
-  top: 1050px;
-  left: 975px;
-  height: 90px;
-  width: 90px;
-  border-radius: 100%;
-}
 .search{
     position: absolute;
     left: 140px;
@@ -205,68 +163,438 @@ nav .wrapper{
     outline: none;
     color: #fff;
 }
-.search:focus{
-    border: solid rgb(0, 140, 255) 5px;
-    
-}
-.Houston{
+
+.Jupiter{
+  border: 10px white solid;
+  width: 80vh;
+  height: 400px;
   color: #fff;
-  position: absolute;
-  top: -100px;
-  left: 350px;
-  transform: translate(-50%, -20%);
-  font-size: 70px;
-  text-align: center;
-  width: 90%;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  background-size: cover;
+  background-image:linear-gradient(to right, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0 ) 120%), url("/assets/Jupiter.jpeg");
+  padding-left: 8%;
 }
-.Podcast{
-  color: #fff;
-  position: absolute;
-  top: -25px;
-  left: 215px;
-  transform: translate(-50%, -20%);
-  font-size: 70px;
-  text-align: center;
-  width: 90%;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-}
-.title p{
-  color: #fff;
-  position: absolute;
-  top: 100px;
-  left: 335px;
-  transform: translate(-50%, -20%);
-  font-size: 15px;
-  text-align: center;
-  width: 90%;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-}
-.space{
-  position: absolute;
-  top: 625px;
-  left: 980px;
-  height: 190px;
+.Makenzie{
+  border: 10px white solid;
+  height: 400px;
   width: 300px;
+  color: #fff;
+  background-size: cover;
+  background-image:linear-gradient(to right, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0 ) 120%), url("/assets/Makenzie.jpeg");
+  padding-left: 8%;
 }
-.ekoi{
-  position: absolute;
-  top: 835px;
-  left: 980px;
-  height: 190px;
-  width: 300px;
+.Bone{
+  border: 10px white solid;
+  color: #fff;
+  height: 188px;
+  background-size: cover;
+  background-image:linear-gradient(to right, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0 ) 120%), url("/assets/Bone.jpeg");
+  padding-left: 8%;
 }
-.body-text{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  text-align: center;
-  padding: 0 30px;
+.Array{
+  border: 10px white solid;
+  background-image: url("/assets/array.jpeg");
+  color: #fff;
+  height: 188px;
+  background-size: cover;
+  background-image:linear-gradient(to right, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0 ) 120%), url("/assets/array.jpeg");
+  padding-left: 8%;
 }
-.body-text div{
-  font-size: 45px;
-  font-weight: 600;
+.Tabla{
+  margin: 0.2% 10% 10% 10%;
+  font-size: small;
 }
 
+    .contenedor-articulos {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .articulo {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      max-width: 250px;
+    }
+
+    .articulo img {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .texto-articulo {
+      display: flex;
+      flex-direction: column;
+      font-size: 14px;
+    }
+
+    .minutos {
+      font-size: 10px;
+      letter-spacing: 2px;
+      color: #555;
+    }
+
+    .titulo {
+      font-weight: bold;
+      font-size: 14px;
+      margin: 5px 0;
+    }
+
+    .etiqueta {
+      font-size: 10px;
+      letter-spacing: 2px;
+      color: #888;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .etiqueta::before {
+      content: "🛈"; 
+      font-size: 12px;
+    }
+    .grid {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .card {
+      position: relative;
+      width: 250px;
+      height: 400px;
+      background-size: cover;
+      background-position: center;
+      overflow: hidden;
+      color: white;
+      display: flex;
+      align-items: flex-end;
+      padding: 20px;
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.5); 
+    }
+
+    .card-content {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .card-title {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .card-button {
+      background-color: red;
+      border: none;
+      color: white;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .card-button:hover {
+      background-color: darkred;
+    }
+    .Humans{
+      color: #000000;
+      padding-left: 10%;
+      padding-top: 1%;
+      font-size: xxx-large;
+    }
+    .image-of-day-container {
+    display: flex;
+    padding: 12%;
+    gap: 40px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.text-section {
+    max-width: 500px;
+}
+
+.today {
+   
+    text-transform: uppercase;
+    font-size: 0.8em;
+    color: gray;
+    margin-bottom: 5px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0 0 15px 0;
+}
+
+h2 {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.description {
+    font-size: 1em;
+    color: #333;
+    margin: 15px 0;
+}
+
+.browse-link, .view-link {
+    display: inline-flex;
+    align-items: center;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.browse-link span, .view-link span {
+    color: red;
+    margin-left: 5px;
+}
+
+.image-section {
+  margin-top: 10%;
+  width: 430px;
+    position: relative;
+}
+
+.image-section img {
+    width: 600px;
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.view-link {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.gallery-container {
+    display: flex;
+    gap: 20px;
+    padding-left: 20%;
+    flex-wrap: wrap;
+}
+
+.gallery {
+    width: 300px;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px;
+}
+
+.images img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.images img:first-child {
+    grid-row: span 2;
+}
+
+h2 {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+p {
+    color: rgb(255, 255, 255);
+    font-size: 0.9em;
+}
+.more{
+  color: #000000;
+  padding-left: 10%;
+}
+.Universe{
+  margin-left: -25%;
+  background-image:linear-gradient(to right, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0 ) 120%), url("/assets/estelar.jpeg");
+  width: 125%;
+  height: 80dvb;
+  background-size: 115%;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+.inboxx{
+  padding-top: 10%;
+  padding-left: 7%;
+  font-size: 500%;
+}
+.stayy{
+  padding-top: 4%;
+  padding-left: 7%;
+  font-size: 115%;
+  line-height: 1.5;
+}
+
+.earth-info-container {
+    display: flex;
+      padding: 5%;
+    gap: 40px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.text-section {
+    max-width: 550px;
+}
+
+.small-title {
+  color: #000000;
+    font-weight: bold;
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+
+.our {
+  color: #000000;
+    font-size: 2.8em;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.description {
+    color: #333;
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.earth-link {
+    display: inline-flex;
+    align-items: center;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.earth-link span {
+    color: red;
+    margin-left: 5px;
+}
+
+.image-section {
+  margin-top: -1%;
+  width: 100%;
+    max-width: 600px;
+}
+
+.image-section img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.caption {
+    font-size: 0.8em;
+    color: #666;
+    margin-top: 8px;
+}
+.nasa-footer {
+  background-color: #000;
+  color: white;
+  padding: 40px 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+}
+
+.logo-section {
+  max-width: 300px;
+}
+
+.nasa-logo {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.arrow {
+  color: red;
+  margin-left: 5px;
+}
+
+.live-badge {
+  background-color: #444;
+  color: white;
+  padding: 2px 5px;
+  font-size: 10px;
+  border-radius: 3px;
+  margin-left: 5px;
+}
+
+.social-icons span {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+hr {
+  margin: 30px 0;
+  border-color: #333;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+.footer-links a {
+  color: white;
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+.footer-links {
+  flex: 1 1 60%;
+  margin-bottom: 10px;
+}
+
+.footer-info {
+
+  display: flex;
+}
